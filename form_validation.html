@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>приклад validation</title>
+</head>
+
+<body>
+    <form method="post">
+        <input type="text" placeholder="Ім'я (від 3 до 15 символів)" minlength="3" maxlength="15" required>
+        <input type="email" placeholder="email" required>
+        <input type="url" placeholder="url">
+        <input type="tel" pattern="\+38\(\d{3}\)\d{3}(-\d{2}){2}" placeholder="+38(051)240-04-40" required>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <script>
+        document.querySelector("form").addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert("Дані надіслані")
+        })
+    </script>
+
+</body>
+
+</html>
