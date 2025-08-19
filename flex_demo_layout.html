@@ -350,8 +350,8 @@
 
         // Функція для оновлення міток
         function updateLabels() {
-            const primaryAxis = flexDirection.includes('row') ? 'Горизонтальне' : 'Вертикальне';
-            const secondaryAxis = flexDirection.includes('row') ? 'Вертикальне' : 'Горизонтальне';
+            const primaryAxis = flexDirection.includes('row') ? '↔️ Горизонтальне' : '↕️ Вертикальне';
+            const secondaryAxis = flexDirection.includes('row') ? '↕️ Вертикальне' : '↔️ Горизонтальне';
 
             justifyContentLabel.textContent = `${primaryAxis} розташування (justify-content)`;
             alignItemsLabel.textContent = `${secondaryAxis} вирівнювання (align-items)`;
